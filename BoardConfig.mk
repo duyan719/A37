@@ -98,19 +98,22 @@ SHRP_EXTERNAL := /external_sd
 SHRP_OTG := /usb-otg
 SHRP_FLASH := 1
 # flash light node
-SHRP_REC := /proc/qcom_flash
+SHRP_CUSTOM_FLASHLIGHT := true
+SHRP_FONP_1 := /proc/qcom_flash
 # Dark Mode
 SHRP_DARK := true
 SHRP_LITE := true
 SHRP_SKIP_DEFAULT_ADDON_1 := true
-
-
+SHRP_REC := /dev/block/bootdevice/by-name/recovery
 SHRP_SKIP_DEFAULT_ADDON_2 := true
-
+SHRP_EXTERNAL_ADDON_PATH := "device/oppo/A37/addon/"
+SHRP_EXTERNAL_ADDON_1_NAME := "ADB Enabler"
+SHRP_EXTERNAL_ADDON_1_INFO := "Enable adb on boot for debug"
+SHRP_EXTERNAL_ADDON_1_FILENAME := "ADBOnBoot.zip"
 
 # LZMA ramdisk compression
 LZMA_RAMDISK_TARGETS := recovery
 LZMA_COMPRESSION := -9
 
-SHRP_REC := /dev/block/bootdevice/by-name/recovery
+
 
